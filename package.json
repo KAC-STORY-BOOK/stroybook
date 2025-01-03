@@ -1,0 +1,23 @@
+{
+  "name": "kac-monorepo",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "build:components": "yarn workspace @kac-monorepo/components build",
+    "dev:components": "yarn workspace @kac-monorepo/components dev",
+    "dev:storybook": "yarn workspace @kac-monorepo/storybook dev",
+    "dev:web": "yarn workspace @kac-monorepo/web start"
+  },
+  "devDependencies": {
+    "@storybook/addon-interactions": "^8.4.7",
+    "@storybook/addon-links": "^8.4.7",
+    "@storybook/addon-onboarding": "^8.4.7",
+    "@storybook/react-webpack5": "^8.4.7"
+  }
+}
