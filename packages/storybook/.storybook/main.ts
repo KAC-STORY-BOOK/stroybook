@@ -10,6 +10,9 @@ const config: StorybookConfig = {
   babel: {
     presets: ["@babel/preset-react", "@babel/preset-typescript"],
   },
+  docs: {
+    autodocs: "tag", // 자동으로 Docs 생성
+  },
 };
 
 export default config;

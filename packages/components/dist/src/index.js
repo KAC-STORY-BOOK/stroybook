@@ -1,4 +1,3 @@
-import React from "react";
-export var ExampleComponent = function () {
-    return React.createElement("div", null, "Hello, Storybook!");
-};
+import Button from "./button";
+import Input from "./input";
+export { Button, Input };

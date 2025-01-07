@@ -1,5 +1,4 @@
-import React from "react";
+import Button from "./button";
+import Input from "./input";
 
-export const ExampleComponent = () => {
-  return <div>Hello, Storybook!</div>;
-};
+export { Button, Input };

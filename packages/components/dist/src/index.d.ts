@@ -1,2 +1,3 @@
-import React from "react";
-export declare const ExampleComponent: () => React.JSX.Element;
+import Button from "./button";
+import Input from "./input";
+export { Button, Input };

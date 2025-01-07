@@ -7,7 +7,8 @@
   },
   "dependencies": {
     "@babel/preset-typescript": "^7.26.0",
-    "@kac-monorepo/components": "*"
+    "@kac-monorepo/components": "*",
+    "@storybook/addon-themes": "^8.4.7"
   },
   "devDependencies": {
     "@babel/core": "^7.24.0",
