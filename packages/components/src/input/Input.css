@@ -1,0 +1,18 @@
+.input-small {
+  padding: 4px;
+  font-size: 12px;
+}
+
+.input-medium {
+  padding: 8px;
+  font-size: 14px;
+}
+
+.input-large {
+  padding: 12px;
+  font-size: 16px;
+}
+
+.input-error {
+  border: 1px solid red;
+}

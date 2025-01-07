@@ -7,13 +7,9 @@ export default {
   component: Input,
   tags: ["autodocs"], // 자동으로 Docs 탭 활성화
   argTypes: {
-    label: {
-      control: "text",
-      description: "Input 필드 상단에 표시되는 라벨 텍스트",
-    },
     errorMessage: {
-      control: "text",
-      description: "Input 하단에 표시되는 에러 메시지",
+      control: "boolean",
+      description: "Input에 표시되는 에러",
     },
     placeholder: {
       control: "text",
@@ -43,21 +39,11 @@ const Template: Story<typeof Input> = (args) => <Input {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-  label: "Username",
   placeholder: "Enter your username",
-};
-
-export const WithError = Template.bind({});
-WithError.args = {
-  label: "Password",
-  placeholder: "Enter your password",
-  errorMessage: "Password must be at least 8 characters",
-  type: "password",
 };
 
 export const Disabled = Template.bind({});
 Disabled.args = {
-  label: "Email",
   placeholder: "Enter your email",
   disabled: true,
 };

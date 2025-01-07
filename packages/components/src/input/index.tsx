@@ -1,21 +1,22 @@
 // packages/components/src/Input/Input.tsx
 import React, { InputHTMLAttributes } from "react";
+import "./Input.css";
 
 export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
-  label?: string; // 라벨 텍스트
-  errorMessage?: string; // 에러 메시지
+  errorMessage?: boolean; // 에러 메시지
+  inputSize?: "small" | "medium" | "large"; // Input 크기
 }
 
 export const Input: React.FC<InputProps> = ({
-  label,
-  errorMessage,
+  errorMessage = false,
+  inputSize = "medium",
   ...props
 }) => {
+  const sizeClass = `input-${inputSize}`;
+  const error = errorMessage ? "input-error" : "";
   return (
     <div className="input-container">
-      {label && <label className="input-label">{label}</label>}
-      <input className="input-field" {...props} />
-      {errorMessage && <p className="input-error">{errorMessage}</p>}
+      <input className={`input-field ${sizeClass} ${error}`} {...props} />
     </div>
   );
 };
