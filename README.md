@@ -68,7 +68,6 @@ yarn install
 
 ## **스크립트**
 
-- `yarn build:components`: `components` 라이브러리를 빌드합니다.
 - `yarn dev:components`: `components` 라이브러리 개발 모드로 실행합니다.
 - `yarn dev:storybook`: Storybook을 실행합니다.
 - `yarn dev:web`: 웹 애플리케이션 개발 서버를 실행합니다.
