@@ -26,9 +26,10 @@ dist/
 
 # Storybook
 storybook-static/
-.storybook/main.iframe.bundle.js
-.storybook/runtime-*.js
-.storybook/storybook-*.js
+.storybook/
+**/main.iframe.bundle.js
+**/runtime-*.js
+**/storybook-*.js
 
 # Environment Files
 .env
