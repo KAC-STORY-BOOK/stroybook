@@ -3,5 +3,5 @@ import Input from "./input";
 import Select from "./Select";
 import Checkbox from "./checkbox";
 import Toggle from "./toggle";
-
-export { Button, Input, Select, Checkbox, Toggle };
+import Radio from "./radio";
+export { Button, Input, Select, Checkbox, Toggle, Radio };
