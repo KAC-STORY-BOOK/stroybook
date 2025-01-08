@@ -1,3 +1,4 @@
 import SearchBar from "./searchbar/SearchBar";
 import Login from "./Login/index";
-export { SearchBar, Login };
+import Confirm from "./Confirm/Confirm";
+export { SearchBar, Login, Confirm };
