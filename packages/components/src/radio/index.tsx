@@ -5,12 +5,14 @@ export interface RadioProps
   options: { value: string; label: string }[];
   defaultValue?: string;
   onChange?: (value: string) => void;
+  disabled?: boolean;
 }
 export const Radio: React.FC<RadioProps> = ({
   options,
   name,
   defaultValue,
   onChange,
+  disabled,
   ...props
 }) => {
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -26,6 +28,7 @@ export const Radio: React.FC<RadioProps> = ({
             type="radio"
             name={name}
             value={option.value}
+            disabled={disabled}
             defaultChecked={defaultValue === option.value}
             onChange={handleChange}
           />

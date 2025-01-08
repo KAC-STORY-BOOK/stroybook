@@ -5,7 +5,24 @@ export default {
   title: "designSystem/Radio",
   component: Radio,
   tags: ["autodocs"],
-  argTypes: {},
+  argTypes: {
+    name: {
+      control: "text",
+      description: "radio 그룹 이름 지정",
+    },
+    options: {
+      control: "object",
+      description: "값 설정",
+    },
+    defaultValue: {
+      control: "text",
+      description: "기본 값 설정",
+    },
+    disabled: {
+      control: "boolean",
+      description: "radio 비활성화",
+    },
+  },
   parameters: {
     docs: {
       description: {
@@ -15,17 +32,32 @@ export default {
   },
 } as Meta<typeof Radio>;
 const Template: Story<typeof Radio> = (args) => <Radio {...args} />;
+
 export const Default = Template.bind({});
 Default.args = {
-  name: "test",
+  name: "default",
   options: [
     { value: "seoul", label: "서울" },
     { value: "incheon", label: "인천" },
     { value: "busan", label: "부산" },
     { value: "daejeon", label: "대전" },
   ],
-  defaultValue: "seoul",
   onChange: (value: string) => {
     console.log("select value", value);
   },
+};
+
+export const Disabled = Template.bind({});
+Disabled.args = {
+  name: "disabled",
+  options: [{ value: "seoul", label: "서울" }],
+  defaultValue: "disable",
+  disabled: true,
+};
+
+export const Checked = Template.bind({});
+Checked.args = {
+  name: "checked",
+  options: [{ value: "seoul", label: "서울" }],
+  defaultValue: "seoul",
 };

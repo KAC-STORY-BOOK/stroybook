@@ -6,7 +6,17 @@ export default {
   title: "designSystem/Select",
   component: Select,
   tags: ["autodocs"],
-  argTypes: {},
+  argTypes: {
+    options: {
+      control: "object",
+      description: "값 설정",
+    },
+
+    disabled: {
+      control: "boolean",
+      description: "select 비활성화",
+    },
+  },
   parameters: {
     docs: {
       description: {
@@ -20,10 +30,15 @@ const Template: Story<typeof Select> = (args) => <Select {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-  placeholder: "Select an option",
   options: [
     { value: "option1", label: "Option 1" },
     { value: "option2", label: "Option 2" },
     { value: "option3", label: "Option 3" },
   ],
+};
+
+export const Disabled = Template.bind({});
+Disabled.args = {
+  options: [{ value: "option1", label: "Option 1" }],
+  disabled: true,
 };
