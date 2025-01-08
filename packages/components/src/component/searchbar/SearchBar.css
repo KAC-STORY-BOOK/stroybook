@@ -1,0 +1,17 @@
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* 간격 설정 */
+}
+
+.search-bar-small {
+  width: 200px;
+}
+
+.search-bar-medium {
+  width: 300px;
+}
+
+.search-bar-large {
+  width: 400px;
+}

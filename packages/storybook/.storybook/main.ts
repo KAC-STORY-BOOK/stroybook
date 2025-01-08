@@ -6,6 +6,8 @@ const config: StorybookConfig = {
   addons: [
     "@storybook/addon-webpack5-compiler-babel",
     "@storybook/addon-essentials",
+    "@storybook/addon-themes",
+    "@storybook-dark-mode",
   ],
   babel: {
     presets: ["@babel/preset-react", "@babel/preset-typescript"],
