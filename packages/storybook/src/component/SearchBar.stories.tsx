@@ -84,37 +84,32 @@ export const CustomButtonText = Template.bind({});
 CustomButtonText.args = {
   placeholder: "검색...",
   size: "large",
-  buttonText: "Go",
+  buttonText: "검색",
   onSearch: action("Custom button clicked"),
 };
 
 /**
  * Play function이 포함된 스토리 추가
  */
-export const PlayFunctionWithAlert = Template.bind({});
-PlayFunctionWithAlert.args = {
+export const PlaySearchBar = Template.bind({});
+PlaySearchBar.args = {
   placeholder: "검색어를 입력하세요...",
   buttonText: "검색",
   size: "medium",
   onSearch: async (value) => {
-    console.log(`검색어: ${value}`); // 검색어 로그 출력
-    return 5; // 예제: 검색 결과 5건 반환
+    return window.alert(`검색 완료`);
   },
 };
-PlayFunctionWithAlert.play = async ({ canvasElement }) => {
+
+PlaySearchBar.play = async ({ canvasElement }) => {
   const canvas = within(canvasElement);
 
-  // 입력 필드에 텍스트 입력
+  // 첫 번째 검색 자동화
   await userEvent.type(
     canvas.getByPlaceholderText("검색어를 입력하세요..."),
-    "테스트 검색어",
+    "자동화된 검색어",
     { delay: 200 },
   );
 
-  // 버튼 클릭
   await userEvent.click(canvas.getByRole("button"));
-
-  // 검색 결과를 받아서 alert 창 표시
-  const searchResultCount = 5; // 검색 결과 개수
-  window.alert(`검색 결과: ${searchResultCount}건`);
 };
