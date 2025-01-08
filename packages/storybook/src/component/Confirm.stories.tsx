@@ -7,7 +7,28 @@ export default {
   title: "Components/Confirm",
   component: Confirm,
   tags: ["autodocs"],
-  argTypes: {},
+  argTypes: {
+    title: {
+      control: { type: "text" },
+      description: "모달창 제목 입력",
+    },
+    message: {
+      control: { type: "text" },
+      description: "모달창 내용 입력",
+    },
+    confirmText: {
+      control: { type: "text" },
+      description: "버튼 텍스트 입력",
+    },
+    cancelText: {
+      control: { type: "text" },
+      description: "버튼 텍스트 입력",
+    },
+    onConfirm: {
+      action: "onConfirm",
+      description: "확인할 시 호출되는 콜백 함수",
+    },
+  },
 } as Meta<typeof Confirm>;
 
 const Template: Story<typeof Confirm> = (args) => <Confirm {...args} />;
