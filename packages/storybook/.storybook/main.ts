@@ -8,6 +8,7 @@ const config: StorybookConfig = {
     "@storybook/addon-essentials",
     "@storybook/addon-themes",
     "@storybook-dark-mode",
+    "@storybook/addon-interactions",
   ],
   babel: {
     presets: ["@babel/preset-react", "@babel/preset-typescript"],

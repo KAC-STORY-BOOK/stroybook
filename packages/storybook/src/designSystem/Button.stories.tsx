@@ -12,6 +12,7 @@ export default {
     variant: {
       control: "select",
       options: ["primary", "secondary", "danger"],
+
       description: "버튼의 스타일을 지정합니다.",
     },
     size: {
@@ -62,7 +63,7 @@ export const Color = () => (
   </div>
 );
 
-export const Disabled = Template.bind({});
+export const Disabled = () => {};
 Disabled.args = {
   variant: "secondary",
   size: "medium",
