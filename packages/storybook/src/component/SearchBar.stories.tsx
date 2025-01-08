@@ -1,6 +1,6 @@
 import React from "react";
 import { StoryFn as Story, Meta } from "@storybook/react";
-import SearchBar from "@kac-monorepo/components/src/component/searchbar/SearchBar";
+import { SearchBar } from "@kac-monorepo/components/src/component/index";
 import { action } from "@storybook/addon-actions";
 
 export default {
