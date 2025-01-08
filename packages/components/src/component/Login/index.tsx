@@ -7,7 +7,7 @@ import Button from "../../button";
 export interface LoginFormProps
   extends Omit<React.HTMLAttributes<HTMLFormElement>, "onSubmit"> {
   onSubmit?: (data: { id: string; pw: string }) => void;
-  errorMessage: boolean;
+  errorMessage?: boolean;
 }
 export const Login: React.FC<LoginFormProps> = ({ onSubmit }) => {
   const [id, setId] = useState("");

@@ -12,6 +12,10 @@ export default {
       action: "onSubmit",
       description: "폼 제출 시 호출되는 콜백 함수",
     },
+    errorMessage: {
+      control: { type: "boolean" },
+      description: "form에 문제가 생겼을 시 활성화",
+    },
   },
 } as Meta<typeof Login>;
 
