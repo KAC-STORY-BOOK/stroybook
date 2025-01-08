@@ -1,3 +1,3 @@
 import SearchBar from "./searchbar/SearchBar";
-
-export { SearchBar };
+import Login from "./Login/index";
+export { SearchBar, Login };

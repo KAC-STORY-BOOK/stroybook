@@ -17,11 +17,15 @@ export const Input: React.FC<InputProps> = ({
   onChange,
   onBlur,
   onFocus,
+  className,
   placeholder,
   ...props
 }) => {
   const sizeClass = `input-${inputSize}`;
   const error = errorMessage ? "input-error" : "";
+  const combinedClassName = `${
+    className || ""
+  } input-field ${sizeClass} ${error}`.trim();
   return (
     <div className="input-container">
       <input
@@ -29,7 +33,7 @@ export const Input: React.FC<InputProps> = ({
         onChange={onChange}
         onFocus={onFocus}
         placeholder={placeholder}
-        className={`input-field ${sizeClass} ${error}`}
+        className={combinedClassName}
         {...props}
       />
     </div>

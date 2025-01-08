@@ -1,6 +1,6 @@
 import React from "react";
 import { StoryFn as Story, Meta } from "@storybook/react";
-import { Login } from "@kac-monorepo/components/src/index";
+import { Login } from "@kac-monorepo/components/src/component/index";
 
 export default {
   title: "Components/Login",
@@ -21,4 +21,9 @@ Default.args = {
   onSubmit: (data: { id: string; pw: string }) => {
     console.log("로그인 요청 데이터:", data);
   },
+};
+
+export const ErrorLogin = Template.bind({});
+ErrorLogin.args = {
+  errorMessage: true,
 };

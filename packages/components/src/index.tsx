@@ -5,5 +5,4 @@ import Checkbox from "./checkbox";
 import Toggle from "./toggle";
 import Radio from "./radio";
 import Typography from "./Typography";
-import Login from "./Login";
-export { Button, Input, Select, Checkbox, Toggle, Radio, Typography, Login };
+export { Button, Input, Select, Checkbox, Toggle, Radio, Typography };

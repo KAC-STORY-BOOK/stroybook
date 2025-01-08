@@ -1,14 +1,15 @@
 import React, { useState } from "react";
 import "./Login.css";
-import Typography from "../Typography";
-import Input from "../input";
-import Button from "../button";
+import Typography from "../../Typography";
+import Input from "../../input";
+import Button from "../../button";
 
 export interface LoginFormProps
   extends Omit<React.HTMLAttributes<HTMLFormElement>, "onSubmit"> {
   onSubmit?: (data: { id: string; pw: string }) => void;
+  errorMessage: boolean;
 }
-export const Login: React.FC<LoginFormProps> = ({ onSubmit }) => {
+export const Login: React.FC<LoginFormProps> = ({ onSubmit, errorMessage }) => {
   const [id, setId] = useState("");
   const [pw, setPw] = useState("");
 
@@ -29,19 +30,22 @@ export const Login: React.FC<LoginFormProps> = ({ onSubmit }) => {
         로그인
       </Typography>
       <Input
+        style={{ width: "100%" }}
         placeholder="아이디를 입력하세요"
-        className="login_input"
+        errorMessage={errorMessage}
         onChange={(e) => {
           setId(e.target.value);
         }}
+        className="login_input"
       />
       <Input
         placeholder="비밀번호를 입력하세요"
         type="password"
-        className="login_input"
         onChange={(e) => {
           setPw(e.target.value);
         }}
+        className="login_input"
+        errorMessage={errorMessage}
       />
       <Button
         type="submit"
