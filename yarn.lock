@@ -1852,7 +1852,7 @@
 
 "@storybook/addon-interactions@^8.4.7":
   version "8.4.7"
-  resolved "https://registry.npmjs.org/@storybook/addon-interactions/-/addon-interactions-8.4.7.tgz"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-interactions/-/addon-interactions-8.4.7.tgz#d34545db5ea6f03a5499ad6742c3317fb9e02d55"
   integrity sha512-fnufT3ym8ht3HHUIRVXAH47iOJW/QOb0VSM+j269gDuvyDcY03D1civCu1v+eZLGaXPKJ8vtjr0L8zKQ/4P0JQ==
   dependencies:
     "@storybook/global" "^5.0.0"
@@ -2098,6 +2098,20 @@
 "@storybook/test@8.4.7":
   version "8.4.7"
   resolved "https://registry.npmjs.org/@storybook/test/-/test-8.4.7.tgz"
+  integrity sha512-AhvJsu5zl3uG40itSQVuSy5WByp3UVhS6xAnme4FWRwgSxhvZjATJ3AZkkHWOYjnnk+P2/sbz/XuPli1FVCWoQ==
+  dependencies:
+    "@storybook/csf" "^0.1.11"
+    "@storybook/global" "^5.0.0"
+    "@storybook/instrumenter" "8.4.7"
+    "@testing-library/dom" "10.4.0"
+    "@testing-library/jest-dom" "6.5.0"
+    "@testing-library/user-event" "14.5.2"
+    "@vitest/expect" "2.0.5"
+    "@vitest/spy" "2.0.5"
+
+"@storybook/test@^8.4.7":
+  version "8.4.7"
+  resolved "https://registry.yarnpkg.com/@storybook/test/-/test-8.4.7.tgz#7f58f2cdf3a6d810bf3ff4e0e2fee634040c678f"
   integrity sha512-AhvJsu5zl3uG40itSQVuSy5WByp3UVhS6xAnme4FWRwgSxhvZjATJ3AZkkHWOYjnnk+P2/sbz/XuPli1FVCWoQ==
   dependencies:
     "@storybook/csf" "^0.1.11"

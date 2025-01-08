@@ -13,7 +13,7 @@ export interface SearchBarProps {
 
 const SearchBar: React.FC<SearchBarProps> = ({
   onSearch,
-  placeholder = "Search...",
+  placeholder = "검색...",
   size = "medium",
   buttonText = "Search",
   disabled = false,
