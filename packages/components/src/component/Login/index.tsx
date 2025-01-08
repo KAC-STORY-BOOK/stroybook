@@ -9,14 +9,15 @@ export interface LoginFormProps
   onSubmit?: (data: { id: string; pw: string }) => void;
   errorMessage: boolean;
 }
-export const Login: React.FC<LoginFormProps> = ({ onSubmit, errorMessage }) => {
+export const Login: React.FC<LoginFormProps> = ({ onSubmit }) => {
   const [id, setId] = useState("");
   const [pw, setPw] = useState("");
-
+  const [errorMessage, setErrorMessage] = useState(false);
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
 
     if (id === "" && pw === "") {
+      setErrorMessage(true); // 에러 메시지 활성화
       alert("아이디 또는 비밀번호를 입력해 주세요");
     } else if (onSubmit) {
       onSubmit({ id, pw });
