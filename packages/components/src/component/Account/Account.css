@@ -1,0 +1,29 @@
+.account_form {
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #f9f9f9;
+  box-sizing: border-box;
+}
+
+.login_input {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px !important;
+}
+
+.account_label {
+  margin: 5px 0;
+  display: block;
+}
+
+.account_error {
+  font-size: 12px;
+  position: relative;
+  top: -5px;
+}
