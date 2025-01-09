@@ -5,4 +5,5 @@ import Checkbox from "./checkbox";
 import Toggle from "./toggle";
 import Radio from "./radio";
 import Typography from "./Typography";
-export { Button, Input, Select, Checkbox, Toggle, Radio, Typography };
+import Image from "./img";
+export { Button, Input, Select, Checkbox, Toggle, Radio, Typography, Image };
