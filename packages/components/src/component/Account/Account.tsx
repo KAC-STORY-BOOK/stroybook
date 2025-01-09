@@ -115,9 +115,20 @@ export const Account: React.FC<AccountProps> = ({
       setShowAlert(true);
     }
   };
+
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLFormElement>) => {
+    if (e.key === "Enter") {
+      handleSubmit(e as unknown as React.FormEvent<HTMLFormElement>);
+    }
+  };
   return (
     <>
-      <form onSubmit={handleSubmit} {...props} className="account_form">
+      <form
+        onSubmit={handleSubmit}
+        {...props}
+        className="account_form"
+        onKeyDown={handleKeyDown}
+      >
         <Typography variant="h2" color="default" align="center" bold>
           회원가입
         </Typography>
