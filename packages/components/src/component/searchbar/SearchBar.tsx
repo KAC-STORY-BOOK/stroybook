@@ -1,6 +1,6 @@
 // packages/components/src/SearchBar/SearchBar.tsx
 import React, { useState } from "react";
-import { Input, Button } from "../../index";
+import { Input, Button } from "../../designSystem/index";
 import "./SearchBar.css";
 
 export interface SearchBarProps {

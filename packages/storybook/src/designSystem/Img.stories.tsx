@@ -1,4 +1,4 @@
-import { Image } from "@kac-monorepo/components/src/index";
+import { Image } from "@kac-monorepo/components/src/designSystem";
 import React from "react";
 import { StoryFn as Story, Meta } from "@storybook/react";
 

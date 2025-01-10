@@ -1,4 +1,4 @@
-import { Typography } from "@kac-monorepo/components/src/index";
+import { Typography } from "@kac-monorepo/components/src/designSystem";
 import { StoryFn as Story, Meta } from "@storybook/react";
 import React from "react";
 

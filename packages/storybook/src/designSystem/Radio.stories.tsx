@@ -1,4 +1,4 @@
-import { Radio } from "@kac-monorepo/components/src/index";
+import { Radio } from "@kac-monorepo/components/src/designSystem";
 import { Meta, StoryFn as Story } from "@storybook/react";
 import React from "react";
 export default {

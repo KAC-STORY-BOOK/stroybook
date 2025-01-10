@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Login.css";
 
-import { Input, Button, Typography } from "../../index";
+import { Input, Button, Typography } from "../../designSystem/index";
 
 export interface LoginFormProps
   extends Omit<React.HTMLAttributes<HTMLFormElement>, "onSubmit"> {

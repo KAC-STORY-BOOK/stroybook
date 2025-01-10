@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Image, Typography } from "../../index";
+import { Button, Image, Typography } from "../../designSystem/index";
 import "./Card.css";
 export interface CardProps {
   title: string;

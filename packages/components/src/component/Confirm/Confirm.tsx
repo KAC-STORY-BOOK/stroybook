@@ -1,6 +1,6 @@
 import React, { HTMLAttributes, useState } from "react";
 import "./Confirm.css";
-import { Button } from "../../index";
+import { Button } from "../../designSystem/index";
 
 export interface ConfirmProps extends HTMLAttributes<HTMLDivElement> {
   title: string;

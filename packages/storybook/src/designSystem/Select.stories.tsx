@@ -1,5 +1,5 @@
 import React from "react";
-import { Select } from "@kac-monorepo/components/src/index";
+import { Select } from "@kac-monorepo/components/src/designSystem";
 import { StoryFn as Story, Meta } from "@storybook/react";
 
 export default {

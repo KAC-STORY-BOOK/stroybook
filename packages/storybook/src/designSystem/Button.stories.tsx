@@ -1,6 +1,6 @@
 import React from "react";
 import { StoryFn as Story, Meta } from "@storybook/react";
-import { Button } from "@kac-monorepo/components/src/index";
+import { Button } from "@kac-monorepo/components/src/designSystem";
 import { action } from "@storybook/addon-actions";
 import { fn } from "@storybook/test";
 

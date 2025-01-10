@@ -80,14 +80,6 @@ Disabled.args = {
   onSearch: action("Search executed (disabled)"),
 };
 
-export const CustomButtonText = Template.bind({});
-CustomButtonText.args = {
-  placeholder: "검색...",
-  size: "large",
-  buttonText: "검색",
-  onSearch: action("Custom button clicked"),
-};
-
 /**
  * Play function이 포함된 스토리 추가
  */
