@@ -3,7 +3,7 @@ import React, { HTMLAttributes } from "react";
 export interface TypographyProps extends HTMLAttributes<HTMLDivElement> {
   variant?: "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "p" | "span";
   color?: "primary" | "secondary" | "error" | "success" | "warning" | "default";
-  align: "left" | "center" | "right";
+  align?: "left" | "center" | "right";
   bold?: boolean;
   italic?: boolean;
 }
