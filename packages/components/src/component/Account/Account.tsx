@@ -1,9 +1,7 @@
 import React, { HTMLAttributes, useState } from "react";
 import "./Account.css";
 import { emailRegex, nameRegex, passwordRegex } from "../../util/regexUtils";
-import Typography from "../../Typography";
-import Input from "../../input";
-import Button from "../../button";
+import { Typography, Input, Button } from "../../index";
 import Alert from "../Alert/Alert";
 export interface AccountProps extends HTMLAttributes<HTMLFormElement> {
   name: string;

@@ -1,6 +1,6 @@
 import React, { HTMLAttributes, useState } from "react";
 import "./Alert.css";
-import Button from "../../button";
+import { Button } from "../../index";
 export interface AlertProps extends HTMLAttributes<HTMLDivElement> {
   content: string;
   buttonText?: string;
