@@ -1,0 +1,19 @@
+.card_wrap {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  transition: all 0.3s ease; /* 부드러운 애니메이션 */
+}
+
+.bottom_contents {
+  padding: 10px;
+}
+.card_btn {
+  display: flex;
+  justify-content: end;
+  padding: 10px 20px;
+}
+.card_wrap:hover {
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* 호버 시 더 깊은 그림자 */
+}

@@ -23,6 +23,7 @@ const Template: Story<typeof Card> = (args) => <Card {...args} />;
 export const Default = Template.bind({});
 
 Default.args = {
-  title: "제목을 입력하세요",
-  content: "내용을 입력하세요",
+  title: "리액트 입문: 기초부터 실전까지",
+  content:
+    "React로 웹 애플리케이션을 만드는 첫걸음을 시작하세요! 컴포넌트, 상태 관리, 그리고 실전 프로젝트까지 완벽하게 배우는 강의.",
 };
