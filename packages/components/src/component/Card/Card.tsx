@@ -4,11 +4,12 @@ import "./Card.css";
 export interface CardProps {
   title: string;
   content: string;
+  onClick?: () => void;
 }
 
-const Card: React.FC<CardProps> = ({ title, content }) => {
+const Card: React.FC<CardProps> = ({ title, content, onClick }) => {
   return (
-    <div className="card_wrap">
+    <div className="card_wrap" onClick={onClick}>
       <Image
         src="https://velog.velcdn.com/images/jeromecheon/post/6d52fa92-63f6-4991-a612-ccd6d74a27dc/1111.png"
         alt="이미지"
@@ -22,7 +23,7 @@ const Card: React.FC<CardProps> = ({ title, content }) => {
         </Typography>
         <Typography variant="p">{content}</Typography>
         <div className="card_btn">
-          <Button>등록하기</Button>
+          <Button onClick={onClick}>등록하기</Button>
         </div>
       </div>
     </div>
