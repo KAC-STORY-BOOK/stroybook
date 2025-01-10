@@ -63,7 +63,7 @@ export const Color = () => (
   </div>
 );
 
-export const Disabled = () => {};
+export const Disabled = Template.bind({});
 Disabled.args = {
   variant: "secondary",
   size: "medium",
@@ -74,8 +74,8 @@ Disabled.args = {
 
 export const ClickEvent = Template.bind({});
 ClickEvent.args = {
-  variant: "danger",
+  variant: "primary",
   size: "large",
-  children: "Danger Button",
+  children: "Click Button",
   onClick: fn(),
 };
