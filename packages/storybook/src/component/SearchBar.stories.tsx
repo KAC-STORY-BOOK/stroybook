@@ -45,7 +45,7 @@ Default.args = {
   placeholder: "검색...",
   size: "medium",
   buttonText: "검색",
-  onSearch: action("Search executed"),
+  onSearch: () => window.alert(`검색 완료`),
 };
 
 export const Sizes = () => (
