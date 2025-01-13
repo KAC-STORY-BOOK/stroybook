@@ -23,7 +23,7 @@ const Card: React.FC<CardProps> = ({ title, content, onClick }) => {
         </Typography>
         <Typography variant="p">{content}</Typography>
         <div className="card_btn">
-          <Button onClick={onClick}>등록하기</Button>
+          <Button>등록하기</Button>
         </div>
       </div>
     </div>
