@@ -31,25 +31,13 @@ Default.args = {
   placeholder: "작성 해 주세요...",
 };
 
-export const Color = () => (
+export const Size = () => (
   <div style={{ display: "flex", gap: "16px" }}>
     <TextArea size="small">Primary</TextArea>
     <TextArea size="medium">Secondary</TextArea>
     <TextArea size="large">Danger</TextArea>
   </div>
 );
-
-export const Small = Template.bind({});
-Small.args = {
-  size: "small",
-  placeholder: "Small textarea...",
-};
-
-export const Large = Template.bind({});
-Large.args = {
-  size: "large",
-  placeholder: "Large textarea...",
-};
 
 export const WithError = Template.bind({});
 WithError.args = {
