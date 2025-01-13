@@ -1,9 +1,9 @@
 import React from "react";
-import { TextArea } from "@kac-monorepo/components/src/designSystem/index";
+import { TextArea } from "@kac-monorepo/components/src/designSystem";
 import { StoryFn as Story, Meta } from "@storybook/react";
 
 export default {
-  title: "Components/Textarea",
+  title: "designSystem/Textarea",
   component: TextArea,
   tags: ["autodocs"],
   argTypes: {
