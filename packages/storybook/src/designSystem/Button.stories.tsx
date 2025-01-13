@@ -37,6 +37,15 @@ export default {
 
 const Template: Story<typeof Button> = (args) => <Button {...args} />;
 
+export const Default = Template.bind({});
+Default.args = {
+  variant: "primary",
+  size: "medium",
+  children: "Default Button",
+  disabled: false,
+  onClick: action("Default button clicked"),
+};
+
 export const Color = () => (
   <div style={{ display: "flex", gap: "16px" }}>
     <Button
