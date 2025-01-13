@@ -4,15 +4,17 @@ import "./Card.css";
 export interface CardProps {
   title: string;
   content: string;
+  src: string;
+  alt: string;
   onClick?: () => void;
 }
 
-const Card: React.FC<CardProps> = ({ title, content, onClick }) => {
+const Card: React.FC<CardProps> = ({ title, content, onClick, alt, src }) => {
   return (
     <div className="card_wrap" onClick={onClick}>
       <Image
-        src="https://velog.velcdn.com/images/jeromecheon/post/6d52fa92-63f6-4991-a612-ccd6d74a27dc/1111.png"
-        alt="이미지"
+        src={src}
+        alt={alt}
         width={400}
         height={250}
         borderRadius={"10px 10px 0 0"}
