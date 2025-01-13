@@ -6,7 +6,7 @@ import "./SearchBar.css";
 export interface SearchBarProps {
   onSearch: (value: string) => void; // 검색 실행 함수
   placeholder?: string; // 입력 필드 placeholder
-  size?: "small" | "medium" | "large"; // 크기 옵션
+  size: "small" | "medium" | "large"; // 크기 옵션
   buttonText?: string; // 버튼 텍스트
   disabled?: boolean; // 비활성화 여부
 }

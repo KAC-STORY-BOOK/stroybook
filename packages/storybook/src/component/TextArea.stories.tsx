@@ -1,5 +1,5 @@
 import React from "react";
-import { TextArea } from "@kac-monorepo/components/src/component/index";
+import { TextArea } from "@kac-monorepo/components/src/designSystem/index";
 import { StoryFn as Story, Meta } from "@storybook/react";
 
 export default {
@@ -33,9 +33,9 @@ Default.args = {
 
 export const Size = () => (
   <div style={{ display: "flex", gap: "16px" }}>
-    <TextArea size="small">Primary</TextArea>
-    <TextArea size="medium">Secondary</TextArea>
-    <TextArea size="large">Danger</TextArea>
+    <TextArea size="small">small</TextArea>
+    <TextArea size="medium">medium</TextArea>
+    <TextArea size="large">large</TextArea>
   </div>
 );
 

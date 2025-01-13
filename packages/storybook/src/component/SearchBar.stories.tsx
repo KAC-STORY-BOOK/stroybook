@@ -53,19 +53,19 @@ export const Sizes = () => (
     <SearchBar
       placeholder="Small SearchBar"
       size="small"
-      buttonText="Search"
+      buttonText="검색"
       onSearch={action("Small search executed")}
     />
     <SearchBar
       placeholder="Medium SearchBar"
       size="medium"
-      buttonText="Search"
+      buttonText="검색"
       onSearch={action("Medium search executed")}
     />
     <SearchBar
       placeholder="Large SearchBar"
       size="large"
-      buttonText="Search"
+      buttonText="검색"
       onSearch={action("Large search executed")}
     />
   </div>

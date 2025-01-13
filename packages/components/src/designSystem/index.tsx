@@ -6,4 +6,16 @@ import Toggle from "./Toggle";
 import Radio from "./Radio";
 import Typography from "./Typography";
 import Image from "./Img";
-export { Button, Input, Select, Checkbox, Toggle, Radio, Typography, Image };
+import TextArea from "./TextArea/index";
+
+export {
+  Button,
+  Input,
+  Select,
+  Checkbox,
+  Toggle,
+  Radio,
+  Typography,
+  Image,
+  TextArea,
+};
