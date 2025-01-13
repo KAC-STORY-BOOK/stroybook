@@ -19,6 +19,18 @@ export default {
     placeholder: {
       control: "text",
     },
+    width: {
+      control: "text",
+      description: "px",
+    },
+    height: {
+      control: "text",
+      description: "px",
+    },
+    reSize: {
+      control: "boolean",
+      description: "사용자 크기 컨트롤",
+    },
   },
 } as Meta<typeof TextArea>;
 
