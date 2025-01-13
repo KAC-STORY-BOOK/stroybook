@@ -1,9 +1,9 @@
-import Button from "./button";
-import Input from "./input";
+import Button from "./Button";
+import Input from "./Input";
 import Select from "./Select";
-import Checkbox from "./checkbox";
-import Toggle from "./toggle";
-import Radio from "./radio";
+import Checkbox from "./CheckBox";
+import Toggle from "./Toggle";
+import Radio from "./Radio";
 import Typography from "./Typography";
-import Image from "./img";
+import Image from "./Img";
 export { Button, Input, Select, Checkbox, Toggle, Radio, Typography, Image };

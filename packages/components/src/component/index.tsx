@@ -5,4 +5,5 @@ import Account from "./Account/Account";
 import Alert from "./Alert/Alert";
 import TabMenu from "./TabMenu/TabMenu";
 import Card from "./Card/Card";
-export { SearchBar, Login, Confirm, Account, Alert, TabMenu, Card };
+import TextArea from "./TextArea/index";
+export { SearchBar, Login, Confirm, Account, Alert, TabMenu, Card, TextArea };
