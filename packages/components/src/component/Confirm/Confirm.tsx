@@ -3,7 +3,7 @@ import "./Confirm.css";
 import { Button } from "../../designSystem/index";
 
 export interface ConfirmProps extends HTMLAttributes<HTMLDivElement> {
-  title: string;
+  title?: string;
   message: string;
   confirmText?: string;
   cancelText?: string;
