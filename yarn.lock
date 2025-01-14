@@ -1280,6 +1280,11 @@
   resolved "https://registry.npmjs.org/@emotion/unitless/-/unitless-0.7.5.tgz"
   integrity sha512-OWORNpfjMsSSUBVrRBVGECkhWcULOAJz9ZW8uK9qgxD+87M7jHRcvh/A96XXNhXTLmKcoYSQtBEX7lHMO7YRwg==
 
+"@esbuild/darwin-arm64@0.24.2":
+  version "0.24.2"
+  resolved "https://registry.npmjs.org/@esbuild/darwin-arm64/-/darwin-arm64-0.24.2.tgz"
+  integrity sha512-kj3AnYWc+CekmZnS5IPu9D+HWtUI49hbnyqk0FLEJDbzCIQt7hg7ucF1SQAilhtYpIujfaHr6O0UHlzzSPdOeA==
+
 "@eslint-community/eslint-utils@^4.2.0":
   version "4.4.1"
   resolved "https://registry.npmjs.org/@eslint-community/eslint-utils/-/eslint-utils-4.4.1.tgz"
@@ -1609,14 +1614,14 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
-"@kac-monorepo/components@*", "@kac-monorepo/components@file:C:\\Users\\USER\\Desktop\\code\\stroybook\\packages\\components":
+"@kac-monorepo/components@*", "@kac-monorepo/components@file:/Users/sanguu/kac-monorepo/packages/components":
   version "1.0.0"
   resolved "file:packages/components"
   dependencies:
     chart.js "^4.4.7"
     react-chartjs-2 "^5.3.0"
 
-"@kac-monorepo/storybook@file:C:\\Users\\USER\\Desktop\\code\\stroybook\\packages\\storybook":
+"@kac-monorepo/storybook@file:/Users/sanguu/kac-monorepo/packages/storybook":
   version "1.0.0"
   resolved "file:packages/storybook"
   dependencies:
@@ -1624,7 +1629,7 @@
     "@kac-monorepo/components" "*"
     "@storybook/addon-themes" "^8.4.7"
 
-"@kac-monorepo/web@file:C:\\Users\\USER\\Desktop\\code\\stroybook\\packages\\web":
+"@kac-monorepo/web@file:/Users/sanguu/kac-monorepo/packages/web":
   version "0.1.0"
   resolved "file:packages/web"
   dependencies:
@@ -5598,6 +5603,11 @@ fs.realpath@^1.0.0:
   version "1.0.0"
   resolved "https://registry.npmjs.org/fs.realpath/-/fs.realpath-1.0.0.tgz"
   integrity sha512-OO0pH2lK6a0hZnAdau5ItzHPI6pUlvI7jMVnxUQRtw4owF2wk8lOSabtGDCTP4Ggrg2MbGnWO9X8K1t4+fGMDw==
+
+fsevents@^2.3.2, fsevents@~2.3.2:
+  version "2.3.3"
+  resolved "https://registry.npmjs.org/fsevents/-/fsevents-2.3.3.tgz"
+  integrity sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==
 
 function-bind@^1.1.2:
   version "1.1.2"

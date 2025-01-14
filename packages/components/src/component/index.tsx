@@ -5,7 +5,8 @@ import Account from "./Account/Account";
 import Alert from "./Alert/Alert";
 import TabMenu from "./TabMenu/TabMenu";
 import Card from "./Card/Card";
-import DoughnutChart from "./DoughnutChart/DoughnutChart";
+import DoughnutChart from "./Cart/DoughnutChart";
+import LineChart from "./Cart/LineCart";
 import StoryDatePicker from "./DatePicker/DatePicker";
 export {
   SearchBar,
@@ -16,5 +17,6 @@ export {
   TabMenu,
   Card,
   DoughnutChart,
+  LineChart,
   StoryDatePicker,
 };
