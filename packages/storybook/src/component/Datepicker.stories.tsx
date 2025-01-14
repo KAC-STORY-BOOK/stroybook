@@ -2,6 +2,7 @@ import React from "react";
 import { StoryDatePicker } from "@kac-monorepo/components/src/component/index";
 import { StoryFn as Story, Meta } from "@storybook/react";
 import { DatePickerStoryProps } from "@kac-monorepo/components/src/component/DatePicker/DatePicker";
+import dayjs from "dayjs";
 
 export default {
   title: "Components/DatePicker",
@@ -30,6 +31,9 @@ export default {
     disabled: {
       control: { type: "boolean" },
     },
+    defaultValue: {
+      control: "date",
+    },
   },
 } as Meta<typeof StoryDatePicker>;
 
@@ -39,3 +43,8 @@ const Template: Story<DatePickerStoryProps> = (args) => (
 
 export const Default = Template.bind({});
 Default.args = {};
+
+export const DefaultValue = Template.bind({});
+DefaultValue.args = {
+  defaultValue: dayjs("2025-01-01"),
+};
