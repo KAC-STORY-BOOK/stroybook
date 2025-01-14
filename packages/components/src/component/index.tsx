@@ -6,7 +6,7 @@ import Alert from "./Alert/Alert";
 import TabMenu from "./TabMenu/TabMenu";
 import Card from "./Card/Card";
 import DoughnutChart from "./DoughnutChart/DoughnutChart";
-
+import StoryDatePicker from "./DatePicker/DatePicker";
 export {
   SearchBar,
   Login,
@@ -16,4 +16,5 @@ export {
   TabMenu,
   Card,
   DoughnutChart,
+  StoryDatePicker,
 };
