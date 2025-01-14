@@ -27,7 +27,7 @@ const DoughnutChart: React.FC<DoughnutChartProps> = ({
         data,
         backgroundColor: backgroundColors,
         borderColor: borderColors,
-        borderWidth: borderWidth,
+        borderWidth,
       },
     ],
   };
