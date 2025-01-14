@@ -5,4 +5,15 @@ import Account from "./Account/Account";
 import Alert from "./Alert/Alert";
 import TabMenu from "./TabMenu/TabMenu";
 import Card from "./Card/Card";
-export { SearchBar, Login, Confirm, Account, Alert, TabMenu, Card };
+import DoughnutChart from "./DoughnutChart/DoughnutChart";
+
+export {
+  SearchBar,
+  Login,
+  Confirm,
+  Account,
+  Alert,
+  TabMenu,
+  Card,
+  DoughnutChart,
+};
