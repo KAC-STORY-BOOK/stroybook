@@ -18,6 +18,17 @@ export default {
     size: {
       control: { type: "select" },
     },
+    showTime: {
+      control: { type: "boolean" },
+      description: "시간 설정",
+    },
+    allowClear: {
+      control: { type: "boolean" },
+      description: "달력 초기화 버튼",
+    },
+    disabled: {
+      control: { type: "boolean" },
+    },
   },
 } as Meta<typeof StoryDatePicker>;
 

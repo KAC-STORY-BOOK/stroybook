@@ -4,12 +4,18 @@ export interface DatePickerStoryProps {
   picker?: "week" | "month" | "year";
   format?: string;
   size?: "small" | "middle" | "large";
+  showTime?: boolean;
+  allowClear?: boolean;
+  disabled?: boolean;
 }
 
 const StoryDatePicker: React.FC<DatePickerStoryProps> = ({
   picker,
-  format = "YYYY-MM-DD",
+  format,
   size,
+  showTime = false,
+  allowClear = false,
+  disabled = false,
 }) => {
   const onChange: DatePickerProps["onChange"] = (date, dateString) => {
     console.log(date, dateString);
@@ -21,6 +27,9 @@ const StoryDatePicker: React.FC<DatePickerStoryProps> = ({
         picker={picker}
         format={format}
         size={size}
+        showTime={showTime}
+        allowClear={allowClear}
+        disabled={disabled}
       />
     </div>
   );
