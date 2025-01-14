@@ -30,6 +30,12 @@ const SearchBar: React.FC<SearchBarProps> = ({
     }
   };
 
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === "Enter") {
+      handleSearch();
+    }
+  };
+
   return (
     <div className={`search-bar search-bar-${size}`}>
       <Input
@@ -38,6 +44,7 @@ const SearchBar: React.FC<SearchBarProps> = ({
         placeholder={placeholder}
         inputSize={size}
         disabled={disabled}
+        onKeyDown={handleKeyDown}
       />
       <Button
         onClick={handleSearch}
