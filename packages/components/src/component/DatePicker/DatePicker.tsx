@@ -14,7 +14,7 @@ const StoryDatePicker: React.FC<DatePickerStoryProps> = ({
   format,
   size,
   showTime = false,
-  allowClear = false,
+  allowClear = true,
   disabled = false,
 }) => {
   const onChange: DatePickerProps["onChange"] = (date, dateString) => {
