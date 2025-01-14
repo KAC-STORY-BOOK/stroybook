@@ -17,7 +17,7 @@ export default {
       description: "tab item 입력",
     },
   },
-} as Meta<typeof TabMenu>;
+} as Meta;
 
 const Template: Story<{ tabs: TabProps[]; defaultActiveTab?: number }> = (
   args,

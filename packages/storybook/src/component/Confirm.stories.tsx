@@ -29,9 +29,9 @@ export default {
       description: "확인할 시 호출되는 콜백 함수",
     },
   },
-} as Meta<typeof Confirm>;
+} as Meta;
 
-const Template: Story<typeof Confirm> = (args) => <Confirm {...args} />;
+const Template: Story<ConfirmProps> = (args) => <Confirm {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {

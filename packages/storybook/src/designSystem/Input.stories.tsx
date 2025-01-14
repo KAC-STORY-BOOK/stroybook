@@ -1,6 +1,7 @@
 import React from "react";
 import { StoryFn as Story, Meta } from "@storybook/react";
 import { Input } from "@kac-monorepo/components/src/designSystem";
+import { InputProps } from "@kac-monorepo/components/src/designSystem/Input";
 
 export default {
   title: "designSystem/Input",
@@ -35,7 +36,7 @@ export default {
   },
 } as Meta<typeof Input>;
 
-const Template: Story<typeof Input> = (args) => <Input {...args} />;
+const Template: Story<InputProps> = (args) => <Input {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {

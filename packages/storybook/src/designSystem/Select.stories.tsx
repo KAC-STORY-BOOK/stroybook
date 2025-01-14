@@ -1,6 +1,7 @@
 import React from "react";
 import { Select } from "@kac-monorepo/components/src/designSystem";
 import { StoryFn as Story, Meta } from "@storybook/react";
+import { SelectProps } from "@kac-monorepo/components/src/designSystem/Select";
 
 export default {
   title: "designSystem/Select",
@@ -24,9 +25,9 @@ export default {
       },
     },
   },
-} as Meta<typeof Select>;
+} as Meta;
 
-const Template: Story<typeof Select> = (args) => <Select {...args} />;
+const Template: Story<SelectProps> = (args) => <Select {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {

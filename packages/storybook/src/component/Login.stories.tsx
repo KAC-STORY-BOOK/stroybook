@@ -2,6 +2,7 @@ import React from "react";
 import { StoryFn as Story, Meta } from "@storybook/react";
 import { Login } from "@kac-monorepo/components/src/component/index";
 import { userEvent, within } from "@storybook/test";
+import { LoginFormProps } from "@kac-monorepo/components/src/component/Login/Login";
 
 export default {
   title: "Components/Login",
@@ -19,7 +20,7 @@ export default {
   },
 } as Meta<typeof Login>;
 
-const Template: Story<typeof Login> = (args) => <Login {...args} />;
+const Template: Story<LoginFormProps> = (args) => <Login {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {

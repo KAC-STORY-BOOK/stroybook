@@ -1,3 +1,4 @@
+import { CardProps } from "@kac-monorepo/components/src/component/Card/Card";
 import { Card } from "@kac-monorepo/components/src/component/index";
 import { StoryFn as Story, Meta } from "@storybook/react";
 import React from "react";
@@ -16,9 +17,9 @@ export default {
       description: "컨텐츠 입력",
     },
   },
-} as Meta<typeof Card>;
+} as Meta;
 
-const Template: Story<typeof Card> = (args) => <Card {...args} />;
+const Template: Story<CardProps> = (args) => <Card {...args} />;
 
 export const Default = Template.bind({});
 

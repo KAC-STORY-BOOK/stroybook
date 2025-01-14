@@ -1,6 +1,7 @@
 import React from "react";
 import { StoryFn as Story, Meta } from "@storybook/react";
 import { Toggle } from "@kac-monorepo/components/src/designSystem";
+import { ToggleProps } from "@kac-monorepo/components/src/designSystem/Toggle";
 
 export default {
   title: "designSystem/Toggle",
@@ -34,7 +35,7 @@ export default {
   },
 } as Meta<typeof Toggle>;
 
-const Template: Story<typeof Toggle> = (args) => <Toggle {...args} />;
+const Template: Story<ToggleProps> = (args) => <Toggle {...args} />;
 
 export const Defalut = Template.bind({});
 Defalut.args = {

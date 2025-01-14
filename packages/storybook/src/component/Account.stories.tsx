@@ -1,3 +1,4 @@
+import { AccountProps } from "@kac-monorepo/components/src/component/Account/Account";
 import { Account } from "@kac-monorepo/components/src/component/index";
 import { StoryFn as Story, Meta } from "@storybook/react";
 import React from "react";
@@ -21,9 +22,9 @@ export default {
       description: "입력한 비밀번호를 재입력 해야합니다.",
     },
   },
-} as Meta<typeof Account>;
+} as Meta;
 
-const Template: Story<typeof Account> = (args) => <Account {...args} />;
+const Template: Story<AccountProps> = (args) => <Account {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {

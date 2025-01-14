@@ -3,6 +3,7 @@ import { StoryFn as Story, Meta } from "@storybook/react";
 import { within, userEvent, expect } from "@storybook/test";
 import { SearchBar } from "@kac-monorepo/components/src/component/index";
 import { action } from "@storybook/addon-actions";
+import { SearchBarProps } from "@kac-monorepo/components/src/component/searchbar/SearchBar";
 
 export default {
   title: "components/SearchBar",
@@ -36,9 +37,9 @@ export default {
       },
     },
   },
-} as Meta<typeof SearchBar>;
+} as Meta;
 
-const Template: Story<typeof SearchBar> = (args) => <SearchBar {...args} />;
+const Template: Story<SearchBarProps> = (args) => <SearchBar {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {

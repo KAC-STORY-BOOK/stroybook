@@ -1,4 +1,5 @@
 import { Typography } from "@kac-monorepo/components/src/designSystem";
+import { TypographyProps } from "@kac-monorepo/components/src/designSystem/Typography";
 import { StoryFn as Story, Meta } from "@storybook/react";
 import React from "react";
 
@@ -44,7 +45,7 @@ export default {
   },
 } as Meta<typeof Typography>;
 
-const Template: Story<typeof Typography> = (args) => <Typography {...args} />;
+const Template: Story<TypographyProps> = (args) => <Typography {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {

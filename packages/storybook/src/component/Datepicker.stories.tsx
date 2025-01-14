@@ -1,6 +1,7 @@
 import React from "react";
 import { StoryDatePicker } from "@kac-monorepo/components/src/component/index";
 import { StoryFn as Story, Meta } from "@storybook/react";
+import { DatePickerStoryProps } from "@kac-monorepo/components/src/component/DatePicker/DatePicker";
 
 export default {
   title: "Components/DatePicker",
@@ -32,7 +33,7 @@ export default {
   },
 } as Meta<typeof StoryDatePicker>;
 
-const Template: Story<typeof StoryDatePicker> = (args) => (
+const Template: Story<DatePickerStoryProps> = (args) => (
   <StoryDatePicker {...args} />
 );
 

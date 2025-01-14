@@ -1,4 +1,5 @@
 import { Radio } from "@kac-monorepo/components/src/designSystem";
+import { RadioProps } from "@kac-monorepo/components/src/designSystem/Radio";
 import { Meta, StoryFn as Story } from "@storybook/react";
 import React from "react";
 export default {
@@ -30,8 +31,8 @@ export default {
       },
     },
   },
-} as Meta<typeof Radio>;
-const Template: Story<typeof Radio> = (args) => <Radio {...args} />;
+} as Meta;
+const Template: Story<RadioProps> = (args) => <Radio {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {

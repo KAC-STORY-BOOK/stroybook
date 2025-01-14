@@ -1,6 +1,7 @@
 import { Alert } from "@kac-monorepo/components/src/component/index";
 import React from "react";
 import { StoryFn as Story, Meta } from "@storybook/react";
+import { AlertProps } from "@kac-monorepo/components/src/component/Alert/Alert";
 
 export default {
   title: "Components/Alert",
@@ -22,9 +23,9 @@ export default {
       },
     },
   },
-} as Meta<typeof Alert>;
+} as Meta;
 
-const Template: Story<typeof Alert> = (args) => <Alert {...args} />;
+const Template: Story<AlertProps> = (args) => <Alert {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {

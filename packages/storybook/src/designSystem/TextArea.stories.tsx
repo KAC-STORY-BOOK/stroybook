@@ -1,6 +1,7 @@
 import React from "react";
 import { TextArea } from "@kac-monorepo/components/src/designSystem";
 import { StoryFn as Story, Meta } from "@storybook/react";
+import { TextareaProps } from "@kac-monorepo/components/src/designSystem/TextArea";
 
 export default {
   title: "designSystem/Textarea",
@@ -32,9 +33,9 @@ export default {
       description: "사용자 크기 컨트롤",
     },
   },
-} as Meta<typeof TextArea>;
+} as Meta;
 
-const Template: Story<typeof TextArea> = (args: any) => <TextArea {...args} />;
+const Template: Story<TextareaProps> = (args: any) => <TextArea {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {

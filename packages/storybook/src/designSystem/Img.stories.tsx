@@ -1,6 +1,7 @@
 import { Image } from "@kac-monorepo/components/src/designSystem";
 import React from "react";
 import { StoryFn as Story, Meta } from "@storybook/react";
+import { ImageProps } from "@kac-monorepo/components/src/designSystem/Img";
 
 export default {
   title: "designSystem/Image",
@@ -32,9 +33,9 @@ export default {
       description: "이미지 사이즈",
     },
   },
-} as Meta<typeof Image>;
+} as Meta;
 
-const Template: Story<typeof Image> = (args) => <Image {...args} />;
+const Template: Story<ImageProps> = (args) => <Image {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {

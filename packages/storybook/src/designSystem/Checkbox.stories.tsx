@@ -1,6 +1,7 @@
 import React from "react";
 import { StoryFn as Story, Meta } from "@storybook/react";
 import { Checkbox } from "@kac-monorepo/components/src/designSystem";
+import { CheckboxProps } from "@kac-monorepo/components/src/designSystem/CheckBox";
 
 export default {
   title: "designSystem/Checkbox",
@@ -34,7 +35,7 @@ export default {
   },
 } as Meta<typeof Checkbox>;
 
-const Template: Story<typeof Checkbox> = (args) => <Checkbox {...args} />;
+const Template: Story<CheckboxProps> = (args) => <Checkbox {...args} />;
 
 export const Defalut = Template.bind({});
 Defalut.args = {

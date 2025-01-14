@@ -3,6 +3,7 @@ import { StoryFn as Story, Meta } from "@storybook/react";
 import { Button } from "@kac-monorepo/components/src/designSystem";
 import { action } from "@storybook/addon-actions";
 import { fn } from "@storybook/test";
+import { ButtonProps } from "@kac-monorepo/components/src/designSystem/Button";
 
 export default {
   title: "designSystem/Button", // 폴더 경로
@@ -35,7 +36,7 @@ export default {
   },
 } as Meta<typeof Button>;
 
-const Template: Story<typeof Button> = (args) => <Button {...args} />;
+const Template: Story<ButtonProps> = (args) => <Button {...args} />;
 
 // 기본 스토리
 export const Default = Template.bind({});
