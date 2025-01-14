@@ -1,6 +1,6 @@
 import React from "react";
 import { StoryFn as Story, Meta } from "@storybook/react";
-import { DoughnutChart } from "@kac-monorepo/components/src/component/index";
+import { DoughnutChart } from "@kac-monorepo/components/src/component";
 
 export default {
   title: "Components/DoughnutChart",
@@ -23,6 +23,9 @@ export default {
       control: { type: "object" },
       description: "데이터 항목의 경계선 색상",
     },
+    borderWidth: {
+      description: "데이터 항목의 경계선 두께",
+    },
   },
 } as Meta;
 
@@ -30,7 +33,7 @@ const Template: Story = (args) => <DoughnutChart {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-  labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+  labels: ["빨강", "파랑", "노랑", "초록", "보라", "주황"],
   data: [12, 19, 3, 5, 2, 3],
   backgroundColors: [
     "rgba(255, 99, 132, 0.2)",
@@ -53,7 +56,7 @@ Default.args = {
 
 export const CustomColors = Template.bind({});
 CustomColors.args = {
-  labels: ["Apple", "Banana", "Cherry"],
+  labels: ["사과", "바나나", "체리"],
   data: [10, 15, 20],
   backgroundColors: [
     "rgba(255, 0, 0, 0.2)",
