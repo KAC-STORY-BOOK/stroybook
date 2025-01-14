@@ -17,11 +17,11 @@ export default {
     },
     width: {
       control: { type: "text" },
-      description: "이미지 너비",
+      description: "px",
     },
     height: {
       control: { type: "text" },
-      description: "이미지 높이",
+      description: "px",
     },
     borderRadius: {
       control: { type: "text" },

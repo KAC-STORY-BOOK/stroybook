@@ -2,9 +2,9 @@ import React from "react";
 export interface ImageProps {
   src: string;
   alt: string;
-  width?: string | number;
-  height?: string | number;
-  borderRadius?: string | number;
+  width?: number;
+  height?: number;
+  borderRadius?: number;
   size?: "small" | "medium" | "large";
 }
 
@@ -28,9 +28,9 @@ const Image: React.FC<ImageProps> = ({
       src={src}
       alt={alt}
       style={{
-        width: resolveSize.width || "auto",
-        height: resolveSize.height || "auto",
-        borderRadius: borderRadius,
+        width: `${resolveSize.width}px` || "auto",
+        height: `${resolveSize.height}px` || "auto",
+        borderRadius: `${borderRadius}px`,
       }}
     />
   );
