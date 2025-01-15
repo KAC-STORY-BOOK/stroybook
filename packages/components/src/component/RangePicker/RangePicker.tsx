@@ -1,18 +1,18 @@
 import React from "react";
-import dayjs, { Dayjs } from "dayjs";
 import { DatePicker } from "antd";
-import { DatePickerProps, RangePickerProps } from "antd/es/date-picker";
+import { RangePickerProps } from "antd/es/date-picker";
+import moment, { Moment } from "moment";
+const { RangePicker } = DatePicker;
+import "antd/dist/antd.css";
 
-const { RangePicker } = DatePicker<DatePickerProps>;
-
-export interface RangePickerStoryProps extends Partial<RangePickerProps> {
+export interface RangePickerStoryProps {
   picker?: "date" | "week" | "month" | "year";
   format?: string;
   size?: "small" | "middle" | "large";
   showTime?: boolean;
   allowClear?: boolean;
   disabled?: boolean;
-  defaultValue?: [Dayjs, Dayjs]; // 시작과 종료 날짜를 다룸
+  defaultValue?: [Moment, Moment]; // 시작과 종료 날짜를 다룸
 }
 
 const StoryRangeDatePicker: React.FC<RangePickerStoryProps> = ({

@@ -1,7 +1,9 @@
 import { ConfigProvider, DatePicker, DatePickerProps } from "antd";
 import React from "react";
-import dayjs, { Dayjs } from "dayjs";
 import koKR from "antd/lib/locale/ko_KR";
+import moment, { Moment } from "moment";
+import "antd/dist/antd.css";
+
 export interface DatePickerStoryProps {
   picker?: "week" | "month" | "year";
   format?: string;
@@ -9,7 +11,7 @@ export interface DatePickerStoryProps {
   showTime?: boolean;
   allowClear?: boolean;
   disabled?: boolean;
-  defaultValue?: Dayjs;
+  defaultValue?: Moment;
   locale?: typeof koKR;
 }
 
