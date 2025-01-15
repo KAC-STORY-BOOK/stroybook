@@ -4,7 +4,7 @@ export interface ImageProps {
   alt: string;
   width?: number;
   height?: number;
-  borderRadius?: number;
+  borderRadius?: number | string;
   size?: "small" | "medium" | "large";
 }
 
