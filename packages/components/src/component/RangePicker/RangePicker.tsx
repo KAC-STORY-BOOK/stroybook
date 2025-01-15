@@ -17,7 +17,7 @@ export interface RangePickerStoryProps extends Partial<RangePickerProps> {
 
 const StoryRangeDatePicker: React.FC<RangePickerStoryProps> = ({
   picker,
-  format = "YYYY-MM-DD",
+  format,
   size,
   showTime = false,
   allowClear = true,
