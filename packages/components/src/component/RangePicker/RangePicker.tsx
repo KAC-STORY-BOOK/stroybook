@@ -12,7 +12,7 @@ export interface RangePickerStoryProps {
   showTime?: boolean;
   allowClear?: boolean;
   disabled?: boolean;
-  defaultValue?: [Moment, Moment]; // 시작과 종료 날짜를 다룸
+  defaultValue?: [string, string]; // 시작과 종료 날짜를 다룸
 }
 
 const StoryRangeDatePicker: React.FC<RangePickerStoryProps> = ({
@@ -28,6 +28,10 @@ const StoryRangeDatePicker: React.FC<RangePickerStoryProps> = ({
     console.log(dates, dateStrings);
   };
 
+  const momentDefaultValue: [Moment, Moment] | undefined = defaultValue
+    ? [moment(defaultValue[0], format), moment(defaultValue[1], format)]
+    : undefined;
+
   return (
     <RangePicker
       picker={picker}
@@ -36,7 +40,7 @@ const StoryRangeDatePicker: React.FC<RangePickerStoryProps> = ({
       showTime={showTime}
       allowClear={allowClear}
       disabled={disabled}
-      defaultValue={defaultValue}
+      defaultValue={momentDefaultValue}
       onChange={onChange}
     />
   );

@@ -11,7 +11,7 @@ export interface DatePickerStoryProps {
   showTime?: boolean;
   allowClear?: boolean;
   disabled?: boolean;
-  defaultValue?: Moment;
+  defaultValue?: string;
   locale?: typeof koKR;
 }
 
@@ -31,7 +31,7 @@ const StoryDatePicker: React.FC<DatePickerStoryProps> = ({
   return (
     <ConfigProvider locale={locale}>
       <DatePicker
-        defaultValue={defaultValue}
+        defaultValue={defaultValue ? moment(defaultValue, format) : undefined} // 문자열을 Moment 객체로 변환
         onChange={onChange}
         picker={picker}
         format={format}

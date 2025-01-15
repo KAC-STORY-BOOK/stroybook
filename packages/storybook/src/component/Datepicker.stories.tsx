@@ -2,7 +2,7 @@ import React from "react";
 import { StoryDatePicker } from "@kac-monorepo/components/src/component/index";
 import { StoryFn as Story, Meta } from "@storybook/react";
 import { DatePickerStoryProps } from "@kac-monorepo/components/src/component/DatePicker/DatePicker";
-import dayjs from "dayjs";
+import moment from "moment";
 
 export default {
   title: "Components/DatePicker",
@@ -33,25 +33,21 @@ export default {
     },
     defaultValue: {
       control: { type: "text" }, // 문자열로 입력받아 dayjs로 변환
-      description: "날짜 기본값 (YYYY-MM-DD 형식)",
+      description: "날짜 기본값",
     },
   },
 } as Meta<typeof StoryDatePicker>;
 
-const Template: Story<DatePickerStoryProps> = (args) => {
-  const defaultValue = args.defaultValue
-    ? dayjs(args.defaultValue) // dayjs로 변환
-    : undefined;
-
-  return <StoryDatePicker {...args} defaultValue={defaultValue} />;
-};
+const Template: Story<DatePickerStoryProps> = (args) => (
+  <StoryDatePicker {...args} />
+);
 
 export const Default = Template.bind({});
 Default.args = {};
 
 export const DefaultValue = Template.bind({});
 DefaultValue.args = {
-  defaultValue: dayjs("2025-01-01"),
+  defaultValue: "2023-01-01",
 };
 
 export const TimeDatePicker = Template.bind({});
