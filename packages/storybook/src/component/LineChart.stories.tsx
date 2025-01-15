@@ -15,6 +15,10 @@ export default {
       control: { type: "object" },
       description: "여러 데이터 세트를 포함한 배열",
     },
+    options: {
+      control: { type: "object" },
+      description: "Chart.js 옵션을 커스터마이징",
+    },
   },
 } as Meta;
 
@@ -32,6 +36,31 @@ Default.args = {
       borderWidth: 2,
     },
   ],
+  options: {
+    responsive: true,
+    plugins: {
+      legend: {
+        position: "top" as const,
+      },
+      tooltip: {
+        enabled: true,
+      },
+    },
+    scales: {
+      x: {
+        title: {
+          display: true,
+          text: "월",
+        },
+      },
+      y: {
+        title: {
+          display: true,
+        },
+        beginAtZero: true,
+      },
+    },
+  },
 };
 
 export const CustomLineCart = Template.bind({});

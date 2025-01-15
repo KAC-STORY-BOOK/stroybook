@@ -31,6 +31,7 @@ interface Dataset {
 interface LineChartProps {
   labels?: string[]; // X축 라벨
   datasets?: Dataset[]; // 여러 개의 데이터 세트
+  options?: object;
 }
 
 const getChartData = (labels: string[] = [], datasets: Dataset[] = []) => ({
@@ -44,37 +45,12 @@ const getChartData = (labels: string[] = [], datasets: Dataset[] = []) => ({
   })),
 });
 
-const getDefaultOptions = () => ({
-  responsive: true,
-  plugins: {
-    legend: {
-      position: "top" as const,
-    },
-    tooltip: {
-      enabled: true,
-    },
-  },
-  scales: {
-    x: {
-      title: {
-        display: true,
-      },
-    },
-    y: {
-      title: {
-        display: true,
-      },
-      beginAtZero: true,
-    },
-  },
-});
-
 const LineChart: React.FC<LineChartProps> = ({
   labels = [],
   datasets = [],
+  options,
 }) => {
   const chartData = getChartData(labels, datasets);
-  const options = getDefaultOptions();
 
   return <Line data={chartData} options={options} />;
 };
