@@ -8,6 +8,7 @@ import Card from "./Card/Card";
 import DoughnutChart from "./Cart/DoughnutChart";
 import LineChart from "./Cart/LineCart";
 import StoryDatePicker from "./DatePicker/DatePicker";
+import StoryRangePicker from "./RangePicker/RangePicker";
 export {
   SearchBar,
   Login,
@@ -19,4 +20,5 @@ export {
   DoughnutChart,
   LineChart,
   StoryDatePicker,
+  StoryRangePicker,
 };
