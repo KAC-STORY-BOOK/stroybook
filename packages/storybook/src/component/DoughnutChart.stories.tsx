@@ -54,8 +54,8 @@ Default.args = {
   borderWidth: 2,
 };
 
-export const CustomColors = Template.bind({});
-CustomColors.args = {
+export const CustomDoughnutCart = Template.bind({});
+CustomDoughnutCart.args = {
   labels: ["사과", "바나나", "체리"],
   data: [10, 15, 20],
   backgroundColors: [
