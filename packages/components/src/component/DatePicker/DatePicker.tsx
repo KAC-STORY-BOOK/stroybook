@@ -1,6 +1,7 @@
-import { DatePicker, DatePickerProps } from "antd";
+import { ConfigProvider, DatePicker, DatePickerProps } from "antd";
 import React from "react";
 import dayjs, { Dayjs } from "dayjs";
+import koKR from "antd/lib/locale/ko_KR";
 export interface DatePickerStoryProps {
   picker?: "week" | "month" | "year";
   format?: string;
@@ -9,6 +10,7 @@ export interface DatePickerStoryProps {
   allowClear?: boolean;
   disabled?: boolean;
   defaultValue?: Dayjs;
+  locale?: typeof koKR;
 }
 
 const StoryDatePicker: React.FC<DatePickerStoryProps> = ({
@@ -19,12 +21,13 @@ const StoryDatePicker: React.FC<DatePickerStoryProps> = ({
   allowClear = true,
   disabled = false,
   defaultValue,
+  locale = koKR,
 }) => {
   const onChange: DatePickerProps["onChange"] = (date, dateString) => {
     console.log(date, dateString);
   };
   return (
-    <div>
+    <ConfigProvider locale={locale}>
       <DatePicker
         defaultValue={defaultValue}
         onChange={onChange}
@@ -35,7 +38,7 @@ const StoryDatePicker: React.FC<DatePickerStoryProps> = ({
         allowClear={allowClear}
         disabled={disabled}
       />
-    </div>
+    </ConfigProvider>
   );
 };
 
