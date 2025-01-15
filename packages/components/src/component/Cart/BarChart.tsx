@@ -20,7 +20,7 @@ interface Dataset {
   borderWidth?: number; // 경계선 두께
 }
 
-interface BarChartProps {
+export interface BarChartProps {
   labels?: string[]; // X축 라벨
   datasets?: Dataset[]; // 여러 개의 데이터 세트
   options?: object; // 사용자 정의 Chart.js 옵션

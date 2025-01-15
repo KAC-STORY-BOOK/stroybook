@@ -28,7 +28,7 @@ interface Dataset {
   borderWidth?: number; // 경계선 두께
 }
 
-interface LineChartProps {
+export interface LineChartProps {
   labels?: string[]; // X축 라벨
   datasets?: Dataset[]; // 여러 개의 데이터 세트
   options?: object;

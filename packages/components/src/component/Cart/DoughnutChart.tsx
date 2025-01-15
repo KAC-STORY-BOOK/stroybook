@@ -5,7 +5,7 @@ import { Doughnut } from "react-chartjs-2";
 // Chart.js/auto가 필요할 경우 추가 설정
 ChartJS.register(ArcElement, Tooltip, Legend);
 
-interface DoughnutChartProps {
+export interface DoughnutChartProps {
   labels?: string[];
   data?: number[];
   backgroundColors?: string[];

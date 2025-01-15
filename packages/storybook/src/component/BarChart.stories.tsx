@@ -1,7 +1,7 @@
 import React from "react";
 import { StoryFn as Story, Meta } from "@storybook/react";
 import { BarChart } from "@kac-monorepo/components/src/component";
-
+import { BarChartProps } from "@kac-monorepo/components/src/component/Cart/BarChart";
 export default {
   title: "Components/BarChart",
   component: BarChart,
@@ -22,7 +22,7 @@ export default {
   },
 } as Meta;
 
-const Template: Story = (args) => <BarChart {...args} />;
+const Template: Story<BarChartProps> = (args) => <BarChart {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {

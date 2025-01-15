@@ -1,6 +1,7 @@
 import React from "react";
 import { StoryFn as Story, Meta } from "@storybook/react";
 import { LineChart } from "@kac-monorepo/components/src/component";
+import { LineChartProps } from "@kac-monorepo/components/src/component/Cart/LineCart";
 
 export default {
   title: "Components/LineChart",
@@ -22,7 +23,7 @@ export default {
   },
 } as Meta;
 
-const Template: Story = (args) => <LineChart {...args} />;
+const Template: Story<LineChartProps> = (args) => <LineChart {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {

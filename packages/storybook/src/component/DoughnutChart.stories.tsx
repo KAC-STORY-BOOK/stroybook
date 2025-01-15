@@ -1,6 +1,7 @@
 import React from "react";
 import { StoryFn as Story, Meta } from "@storybook/react";
 import { DoughnutChart } from "@kac-monorepo/components/src/component";
+import { DoughnutChartProps } from "@kac-monorepo/components/src/component/Cart/DoughnutChart";
 
 export default {
   title: "Components/DoughnutChart",
@@ -29,7 +30,9 @@ export default {
   },
 } as Meta;
 
-const Template: Story = (args) => <DoughnutChart {...args} />;
+const Template: Story<DoughnutChartProps> = (args) => (
+  <DoughnutChart {...args} />
+);
 
 export const Default = Template.bind({});
 Default.args = {
