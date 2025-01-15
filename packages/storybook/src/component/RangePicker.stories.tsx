@@ -33,6 +33,11 @@ export default {
     defaultValue: {
       control: { type: "object" }, // 문자열로 입력받아 dayjs로 변환
     },
+    placeholder: {
+      control: { type: "object" },
+      description: "RangePicker의 placeholder 설정",
+      defaultValue: ["시작일", "종료일"],
+    },
   },
 } as Meta<typeof StoryRangePicker>;
 

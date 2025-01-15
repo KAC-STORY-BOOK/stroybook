@@ -35,6 +35,10 @@ export default {
       control: { type: "text" }, // 문자열로 입력받아 dayjs로 변환
       description: "날짜 기본값",
     },
+    placeholder: {
+      control: { type: "text" },
+      description: "날짜를 입력하세요.",
+    },
   },
 } as Meta<typeof StoryDatePicker>;
 

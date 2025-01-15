@@ -13,6 +13,7 @@ export interface DatePickerStoryProps {
   disabled?: boolean;
   defaultValue?: string;
   locale?: typeof koKR;
+  placeholder?: string;
 }
 
 const StoryDatePicker: React.FC<DatePickerStoryProps> = ({
@@ -24,6 +25,7 @@ const StoryDatePicker: React.FC<DatePickerStoryProps> = ({
   disabled = false,
   defaultValue,
   locale = koKR,
+  placeholder,
 }) => {
   const onChange: DatePickerProps["onChange"] = (date, dateString) => {
     console.log(date, dateString);
@@ -39,6 +41,7 @@ const StoryDatePicker: React.FC<DatePickerStoryProps> = ({
         showTime={showTime}
         allowClear={allowClear}
         disabled={disabled}
+        placeholder={placeholder}
       />
     </ConfigProvider>
   );

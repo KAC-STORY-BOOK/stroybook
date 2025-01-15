@@ -1,9 +1,10 @@
 import React from "react";
-import { DatePicker } from "antd";
+import { DatePicker, ConfigProvider } from "antd";
 import { RangePickerProps } from "antd/es/date-picker";
-import moment, { Moment } from "moment";
+import moment, { locale, Moment } from "moment";
 const { RangePicker } = DatePicker;
 import "antd/dist/antd.css";
+import koKR from "antd/lib/locale/ko_KR";
 
 export interface RangePickerStoryProps {
   picker?: "date" | "week" | "month" | "year";
@@ -13,6 +14,8 @@ export interface RangePickerStoryProps {
   allowClear?: boolean;
   disabled?: boolean;
   defaultValue?: [string, string]; // 시작과 종료 날짜를 다룸
+  locale?: typeof koKR;
+  placeholder?: [string, string];
 }
 
 const StoryRangeDatePicker: React.FC<RangePickerStoryProps> = ({
@@ -23,6 +26,8 @@ const StoryRangeDatePicker: React.FC<RangePickerStoryProps> = ({
   allowClear = true,
   disabled = false,
   defaultValue,
+  locale = koKR,
+  placeholder,
 }) => {
   const onChange: RangePickerProps["onChange"] = (dates, dateStrings) => {
     console.log(dates, dateStrings);
@@ -33,16 +38,19 @@ const StoryRangeDatePicker: React.FC<RangePickerStoryProps> = ({
     : undefined;
 
   return (
-    <RangePicker
-      picker={picker}
-      format={format}
-      size={size}
-      showTime={showTime}
-      allowClear={allowClear}
-      disabled={disabled}
-      defaultValue={momentDefaultValue}
-      onChange={onChange}
-    />
+    <ConfigProvider locale={locale}>
+      <RangePicker
+        picker={picker}
+        format={format}
+        size={size}
+        showTime={showTime}
+        allowClear={allowClear}
+        disabled={disabled}
+        defaultValue={momentDefaultValue}
+        onChange={onChange}
+        placeholder={placeholder}
+      />
+    </ConfigProvider>
   );
 };
 
