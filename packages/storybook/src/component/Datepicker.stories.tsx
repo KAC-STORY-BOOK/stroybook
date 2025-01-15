@@ -32,14 +32,19 @@ export default {
       control: { type: "boolean" },
     },
     defaultValue: {
-      control: "date",
+      control: { type: "text" }, // 문자열로 입력받아 dayjs로 변환
+      description: "날짜 기본값 (YYYY-MM-DD 형식)",
     },
   },
 } as Meta<typeof StoryDatePicker>;
 
-const Template: Story<DatePickerStoryProps> = (args) => (
-  <StoryDatePicker {...args} />
-);
+const Template: Story<DatePickerStoryProps> = (args) => {
+  const defaultValue = args.defaultValue
+    ? dayjs(args.defaultValue) // dayjs로 변환
+    : undefined;
+
+  return <StoryDatePicker {...args} defaultValue={defaultValue} />;
+};
 
 export const Default = Template.bind({});
 Default.args = {};
@@ -47,4 +52,14 @@ Default.args = {};
 export const DefaultValue = Template.bind({});
 DefaultValue.args = {
   defaultValue: dayjs("2025-01-01"),
+};
+
+export const TimeDatePicker = Template.bind({});
+TimeDatePicker.args = {
+  showTime: true,
+};
+
+export const DatePickerDisabled = Template.bind({});
+DatePickerDisabled.args = {
+  disabled: true,
 };
