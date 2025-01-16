@@ -1,6 +1,9 @@
 import { CalloutsProps } from "@kac-monorepo/components/src/component/Callouts/Callouts";
 import { Callouts } from "@kac-monorepo/components/src/component/index";
 import { StoryFn as Story, Meta } from "@storybook/react";
+import { faInfoCircle } from "@fortawesome/free-solid-svg-icons";
+import { faBullhorn } from "@fortawesome/free-solid-svg-icons";
+
 import React from "react";
 export default {
   title: "Components/Callouts",
@@ -21,9 +24,12 @@ export default {
     width: {
       control: "text",
     },
+    icon: {
+      description:
+        "사용자의 주목을 끌어 중요한 정보를 강조할 때 사용되는 아이콘 입니다.",
+    },
   },
 } as Meta;
-
 const Template: Story<CalloutsProps> = (args) => <Callouts {...args} />;
 
 export const Default = Template.bind({});
@@ -41,6 +47,7 @@ Info.args = {
   title: "안내",
   description: "최신 버전으로 업데이트하고 더 편해진 약속을 확인해보세요.",
   type: "info",
+  icon: faInfoCircle,
 };
 
 export const Warning = Template.bind({});
@@ -56,6 +63,7 @@ Danger.args = {
   description:
     "최근 3개월 내 3회 이상 경찰에 사기 신고된 전화번호입니다. 피해 위험이 있으니, 주의하세요!",
   type: "danger",
+  icon: faBullhorn,
 };
 
 export const Outline = Template.bind({});

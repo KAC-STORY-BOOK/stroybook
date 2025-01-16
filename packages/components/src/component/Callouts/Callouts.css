@@ -34,3 +34,7 @@
 .callouts_icon {
   margin: 0 15px;
 }
+
+.callout_wrap .icon {
+  margin-right: 5px;
+}
