@@ -28,6 +28,11 @@ export default {
       description:
         "사용자의 주목을 끌어 중요한 정보를 강조할 때 사용되는 아이콘 입니다.",
     },
+    actionIcon: {
+      control: "select",
+      options: ["close", "link"],
+      description: "사용자의 액션에 따라 아이콘을 설정할 수 있습니다.",
+    },
   },
 } as Meta;
 const Template: Story<CalloutsProps> = (args) => <Callouts {...args} />;
@@ -48,6 +53,7 @@ Info.args = {
   description: "최신 버전으로 업데이트하고 더 편해진 약속을 확인해보세요.",
   type: "info",
   icon: faInfoCircle,
+  actionIcon: "close",
 };
 
 export const Warning = Template.bind({});
@@ -55,6 +61,7 @@ Warning.args = {
   title: "알림",
   description: "상품권을 거래하기 전에 상품권 거래 유의사항을 확인해주세요.",
   type: "warning",
+  actionIcon: "close",
 };
 
 export const Danger = Template.bind({});
@@ -63,6 +70,7 @@ Danger.args = {
   description:
     "최근 3개월 내 3회 이상 경찰에 사기 신고된 전화번호입니다. 피해 위험이 있으니, 주의하세요!",
   type: "danger",
+  actionIcon: "close",
   icon: faBullhorn,
 };
 
@@ -71,4 +79,5 @@ Outline.args = {
   title: "설문조사",
   description: "개선을 위해 여러분의 목소리를 들려주세요.",
   type: "outline",
+  actionIcon: "link",
 };
