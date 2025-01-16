@@ -11,6 +11,7 @@
 }
 
 .confirm_modal {
+  min-width: 400px;
   width: 400px;
   max-width: 90%;
   padding: 25px;
