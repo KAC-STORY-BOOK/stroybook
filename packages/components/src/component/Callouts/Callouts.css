@@ -2,6 +2,8 @@
   padding: 20px;
   border-radius: 10px;
   word-break: keep-all;
+  display: flex;
+  align-items: center;
 }
 
 .callout_wrap.info {
@@ -27,4 +29,8 @@
 .callout_wrap.danger {
   background: #fff5f5;
   color: #993f3c;
+}
+
+.callouts_icon {
+  margin: 0 15px;
 }

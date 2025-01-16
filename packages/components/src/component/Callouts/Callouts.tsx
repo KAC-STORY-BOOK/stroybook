@@ -1,5 +1,7 @@
 import React from "react";
 import "./Callouts.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
 export interface CalloutsProps {
   type: "outline" | "normal" | "info" | "danger" | "warning";
@@ -16,9 +18,12 @@ const Callouts: React.FC<CalloutsProps> = ({
 }) => {
   return (
     <div className={`callout_wrap ${type}`} style={{ width: width + "px" }}>
-      <b>{title}</b>
-      &nbsp;
-      {description}
+      <div>
+        <b>{title}</b>
+        &nbsp;
+        {description}
+      </div>
+      <FontAwesomeIcon icon={faChevronRight} className={`callouts_icon`} />
     </div>
   );
 };
