@@ -10,6 +10,8 @@ import BarChart from "./Cart/BarChart";
 import StoryDatePicker from "./DatePicker/DatePicker";
 import StoryRangePicker from "./RangePicker/RangePicker";
 import Callouts from "./Callouts/Callouts";
+import Table from "./Table/Table";
+
 export {
   SearchBar,
   Login,
@@ -23,4 +25,5 @@ export {
   StoryDatePicker,
   StoryRangePicker,
   Callouts,
+  Table,
 };
