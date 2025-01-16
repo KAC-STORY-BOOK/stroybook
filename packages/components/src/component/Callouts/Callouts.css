@@ -1,0 +1,30 @@
+.callout_wrap {
+  padding: 20px;
+  border-radius: 10px;
+  word-break: keep-all;
+}
+
+.callout_wrap.info {
+  background: #f2fafe;
+  color: #29506a;
+}
+
+.callout_wrap.normal {
+  background: #f2f3f6;
+  color: #333;
+}
+
+.callout_wrap.outline {
+  background: #fff;
+  border: 1px solid #ccc;
+}
+
+.callout_wrap.warning {
+  background: #fefaf3;
+  color: #796651;
+}
+
+.callout_wrap.danger {
+  background: #fff5f5;
+  color: #993f3c;
+}
