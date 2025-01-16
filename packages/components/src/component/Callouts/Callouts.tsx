@@ -1,6 +1,5 @@
 import React from "react";
 import "./Callouts.css";
-import { Typography } from "../../designSystem";
 
 export interface CalloutsProps {
   type: "outline" | "normal" | "info" | "danger" | "warning";
@@ -13,7 +12,7 @@ const Callouts: React.FC<CalloutsProps> = ({
   title,
   description,
   width = 400,
-  type,
+  type = "normal",
 }) => {
   return (
     <div className={`callout_wrap ${type}`} style={{ width: width + "px" }}>
