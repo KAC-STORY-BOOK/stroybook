@@ -84,9 +84,3 @@ Hoverable.args = {
   ...Default.args,
   hoverable: true,
 };
-
-export const Disabled = Template.bind({});
-Disabled.args = {
-  ...Default.args,
-  // 예를 들어, 특정 행을 비활성화하는 기능이 필요하다면 추가 구현 필요
-};
