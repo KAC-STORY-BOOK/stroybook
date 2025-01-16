@@ -2,7 +2,7 @@ import React, { HTMLAttributes, useState } from "react";
 import "./Account.css";
 import { emailRegex, nameRegex, passwordRegex } from "../../util/regexUtils";
 import { Typography, Input, Button } from "../../designSystem/index";
-import Alert from "../Alert/Alert";
+import Modal from "../Modal/Modal";
 export interface AccountProps extends HTMLAttributes<HTMLFormElement> {
   name: string;
   email: string;
@@ -237,9 +237,10 @@ export const Account: React.FC<AccountProps> = ({
         </Button>
       </form>
       {showAlert && (
-        <Alert
-          content="회원가입이 성공적으로 완료되었습니다!"
-          onClose={() => setShowAlert(false)} // 닫기 버튼 클릭 시 Alert 숨김
+        <Modal
+          title="회원가입"
+          description="회원가입이 성공적으로 완료되었습니다!"
+          primaryAction={{ label: "확인", onClick: () => {} }}
         />
       )}
     </>
